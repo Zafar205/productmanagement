@@ -22,7 +22,7 @@ export default function RootLayout({
     elements : {formButtonPrimary :'bg-purple-600 hover:bg-purple-800 text-white', card : 'bg-color-800'}}}>
 
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased" suppressHydrationWarning>
+      <body className="antialiased dotted-background" suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header/>
           <main className="min-h-screen">{children}</main>

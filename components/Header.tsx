@@ -4,16 +4,17 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from './ui/button';
 import { PenBox } from 'lucide-react';
+import UserMenu from './user-menu';
 
 const Header = () => {
   return (
-    <header className="bg-gray shadow-md">
+    <header className="bg-gray">
       <div className="container mx-auto flex justify-between items-center p-4">
         
         {/* Logo */}
         <Link href="/" passHref>
           <Image
-            src="/dehlicollege.jfif"
+            src="/pman.png"
             alt="Logo"
             width={100}
             height={100}
@@ -40,7 +41,7 @@ const Header = () => {
 
 
             <SignedIn>
-              <UserButton />
+              <UserMenu />
             </SignedIn>
           </div>
         </nav>
